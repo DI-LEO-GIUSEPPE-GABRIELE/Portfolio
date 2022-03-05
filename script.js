@@ -53,3 +53,9 @@ butSub.addEventListener("click", function () {
     );
   }
 });
+
+
+//SCROLL PARALLAX API
+AOS.init({
+  duration: 1200
+ });
