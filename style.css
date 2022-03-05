@@ -205,6 +205,10 @@ header {
   }
 }
 
+.map {
+  filter: drop-shadow(16px 16px 20px red) invert(100%);
+}
+
 /* FOOTER */
 footer a {
   z-index: 20;
