@@ -18,13 +18,6 @@ header {
   top: 0;
 }
 
-#up {
-  position: fixed;
-  bottom: 2vh;
-  right: 1px;
-  font-size: 2em;
-}
-
 /* SECTION SKILLS */
 #skills img {
   width: 70px;
