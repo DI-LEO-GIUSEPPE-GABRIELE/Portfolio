@@ -1,0 +1,31 @@
+TRACCIA
+Il tuo compito è quello di progettare il gioco Memory Game con jQuery.
+
+Creerai un file JavaScript esterno e lo collegherai alla pagina HTML del progetto. 
+
+Questo è il progetto conclusivo del corso su jQuery e contestualizza le informazioni che hai appreso su jQuery durante questo percorso formativo.
+
+Suggerimento: utilizza un array con doppi nomi per confrontare poi le immagini cliccate. All’interno del codice puoi anche utilizzare il metodo eq() che serve ad individuare elementi specifici all'interno di un set di elementi.
+
+INDICAZIONI
+1. creo una variabile che mi contiene le immagini cliccate
+
+2. quando il documento è pronto...vado a selezionare casualmente una immagine dalla cartella.
+
+	2a. creo una variabile "images" che contiene il selettore della classe "images"; così ho un oggetto jQuery e metto gli elementi corrispondenti nell'oggetto jQuery.
+
+	2b. creo un ciclo for sull'oggetto creato per ottenere poi un'immagine random.
+
+		2b1. prendo a caso un elemento dalla mia lista.
+
+		2b2. vado a prendere il file localizzato nella directory img e creo il tag html e lo inserisco nella pagina.
+
+3. creo la funzione principale "mostraImg"
+
+	3a. creo l'oggetto jQuery per i clicks e lo chiamo "tuttiIClick" e prendo il valore e poi incremento.
+
+	3b. ora visualizzo l'emoji (l'immagine) a due a due se sono diverse le nascondo altrimenti le lascio visibili.
+
+		3b1. se non sono due visualizzo l'emoji e la inserisco in "clickImgs".
+
+			3b1a. se sono uguali azzero la mia lista, se sono diverse nascondo le due immagini.

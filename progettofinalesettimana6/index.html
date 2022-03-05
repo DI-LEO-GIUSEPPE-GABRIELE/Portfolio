@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Memory Game</title>
+	<link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="box">
+				<div class="numclicks">
+					<h2>Numero di click: <span id="clicks">0</span></h2>
+				</div>
+				<!-- creo i div delle caselle del gioco per tutte le immagini con richiamo della funzione al click -->
+				<div class="images" id="0" onclick='mostraImg(0)'></div>
+				<div class="images" id="1" onclick='mostraImg(1)'></div>
+				<div class="images" id="2" onclick='mostraImg(2)'></div>
+				<div class="images" id="3" onclick='mostraImg(3)'></div>
+				<div class="images" id="4" onclick='mostraImg(4)'></div>
+				<div class="images" id="5" onclick='mostraImg(5)'></div>
+				<div class="images" id="6" onclick='mostraImg(6)'></div>
+				<div class="images" id="7" onclick='mostraImg(7)'></div>
+				<div class="images" id="8" onclick='mostraImg(8)'></div>
+				<div class="images" id="9" onclick='mostraImg(9)'></div>
+				<div class="images" id="10" onclick='mostraImg(10)'></div>
+				<div class="images" id="11" onclick='mostraImg(11)'></div>
+				<div class="images" id="12" onclick='mostraImg(12)'></div>
+				<div class="images" id="13" onclick='mostraImg(13)'></div>
+				<div class="images" id="14" onclick='mostraImg(14)'></div>
+				<div class="images" id="15" onclick='mostraImg(15)'></div>
+				<!-- Inserisco location.reload() per ricaricare il documento -->
+				<div class="restart"><input type="button" name="Restart" id="Restart" value="Nuova partita"
+						onclick="location.reload();" /></div>
+
+			</div>
+			<h3 id="incoraggiamento">Iniziamo</h3>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>

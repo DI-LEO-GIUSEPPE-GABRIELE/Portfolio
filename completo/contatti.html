@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Epicode School: il punto di partenza per la tua professione di Developer.">
+  <title>Epicode - Contatti</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
+  <link href="assets/css/reset.css" rel="stylesheet">
+  <link href="assets/css/stile.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div id="logo">
+        <a href="index.html" title="Vai alla home page">
+            <img src="assets/images/logo.png" alt="Logo Epicode" width="130" height="40">
+        </a>
+    </div>
+    <label for="menuButton" id="menuMobile"><i class="lni lni-more-alt"></i></label>
+    <input type="checkbox" id="menuButton" />
+    <nav>
+        <ul>
+            <li><a href="index.html" title="Vai alla homepage">Home</a></li>
+            <li><a href="chi-siamo.html" title="Descrizione e mission di Epicode"> Chi siamo</a></li>
+            <li><a href="contatti.html" title="Contattaci per info sui corsi">Contatti</a></li>
+            <li><a href="registrati.html" class="buttonStyle" title="Registrati per accedere all'area riservata">Registrati</a></li>
+        </ul>
+    </nav>
+</header>
+
+<hr>
+
+<main>
+  <section id="contatti">
+    <h1>Contatti</h1>
+    <div id="contattiBox">
+        <form method="POST" action="elaboraForm.php">
+          <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome e cognome">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Indirizzo valido nome@casella.com">
+            <label for="testo">Messaggio:</label>
+            <textarea name="testo" id="testo" rows="3" placeholder="Scrivi in breve il tuo messaggio"></textarea>
+            <button type="submit" class="buttonStyle">Invia il messaggio</button>
+          </fieldset>
+        </form>
+
+        <div class="indirizzi">
+          <div>
+            <h2>Sede formativa</h2>
+            <address>Via Appia 1<br/>00100 Roma (RM)</address>
+            <address>info@epicode.school<br>+39 0612345956</address>
+          </div>
+          <div>
+              <h2>Lavora con noi</h2>
+              <p>Per poterti candidare ad un ruolo da docente invia il tuo cv a job@epicode.school</p>
+          </div>
+         
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<hr>
+
+<footer>
+  <section id="collegamenti">
+      <div>
+          <h2>Chi siamo</h2>
+          <p>Epicode School nasce con l’obiettivo di rivoluzionare la formazione in ambito tech.</p>
+      </div>
+  
+      <div>
+          <h2>Ti piace ciò che vedi? Condividilo con i tuoi amici!</h2>
+          <nav>
+              <ul>
+                  <li><a href="https://facebook.com/" target="_blank"><i class="lni lni-facebook-original"></i></a></li>
+                  <li><a href="https://www.linkedin.com/" target="_blank"><i class="lni lni-linkedin-original"></i></a></li>
+                  <li><a href="https://instagram.com/" target="_blank"><i class="lni lni-instagram-filled"></i></a></li>
+              </ul>
+          </nav>
+      </div>
+  
+      <div>
+          <h2>Iscriviti alla nostra newsletter</h2>
+          
+          <form method="POST" action="elabora-codice.php">
+              <fieldset>
+                  <input type="email" name="email" id="email" required>
+                  <button type="submit" class="buttonStyle">Va bene!</button>
+              </fieldset>
+          </form>
+      </div>
+  </section>
+  <div id="copyright">
+      <address>&copy; 2021 Epicode Web Developer school - Via Appia 1, 00100 Roma (RM) - Tel. 06-12345678</address>    
+  </div>
+</footer>
+
+</body>
+
+</html>

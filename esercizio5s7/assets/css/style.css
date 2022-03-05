@@ -1,0 +1,57 @@
+header {
+    height: 30em;
+}
+
+h1 {
+    font-family: 'cursive', sans-serif;
+    text-shadow: 0px 0px 2px black;
+}
+
+#gradient {
+    background-image: linear-gradient(to right, green, white,red);
+  }
+
+#logo {
+    height: 100%;
+}
+
+#regioni {
+    width: 200px;
+    margin-right: 10px;
+}
+
+#regioni_menu, #province_menu {
+    overflow: auto;
+    max-height: 350px;
+    width: 100%;
+}
+#nascosto{
+    display: none;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+#nascosto img{
+    width: 10%;
+}
+
+#bandiera {
+    animation-name: onda;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes onda {
+    0% {
+        transform: translateX(10px);
+    }
+    50% {
+         transform: scaleX(2); 
+        transform: rotateY(-180deg)
+    }
+    100% {
+        transform: translateX(-10px);
+        transform: rotateY(360deg)
+    }
+}
