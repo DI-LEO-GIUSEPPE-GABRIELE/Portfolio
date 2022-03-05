@@ -58,3 +58,14 @@ butSub.addEventListener("click", function () {
 AOS.init({
   duration: 1200,
 });
+
+//IMPLEMENTAZIONE DARK-MODE
+const toggle = document.getElementById('toggle');
+const body = document.querySelector('body');
+const map = document.getElementById('map');
+
+toggle.onclick = function(){
+  toggle.classList.toggle('active');
+  body.classList.toggle('active');
+  map.classList.toggle('active');
+}
