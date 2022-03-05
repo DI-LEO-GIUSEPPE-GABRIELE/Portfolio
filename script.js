@@ -63,9 +63,11 @@ AOS.init({
 const toggle = document.getElementById('toggle');
 const body = document.querySelector('body');
 const map = document.getElementById('map');
+const nav =  document.getElementById('nav');
 
 toggle.onclick = function(){
   toggle.classList.toggle('active');
   body.classList.toggle('active');
   map.classList.toggle('active');
+  nav.classList.toggle('active');
 }

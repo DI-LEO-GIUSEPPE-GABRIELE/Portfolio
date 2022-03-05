@@ -10,6 +10,10 @@ body.active {
   color: black;
 }
 
+#nav {
+  background-color:#1f1f22;
+}
+
 main {
   margin: 0 4em;
 }
@@ -64,6 +68,10 @@ header {
 
 #map.active {
   filter: none;
+}
+
+#nav.active {
+  background-color: #a50000;
 }
 
 /* SECTION SKILLS */
