@@ -44,7 +44,9 @@ header {
   left: 0;
   width: 2em;
   height: 2em;
-  background: linear-gradient(to bottom, white,rgb(124, 124, 124));
+  /* background: linear-gradient(to bottom, white,rgb(124, 124, 124)); */
+  background: url('./img/moon.jpg');
+  background-size:cover;
   transform: scale(0.9);
   border-radius: 50%;
   transition: 0.5s;
@@ -52,6 +54,8 @@ header {
 
 #toggle.active .indicator {
   left:3em;
+  background: url('./img/sun-png.jpg');
+  background-size:cover;
 }
 
 #toggle.active {
