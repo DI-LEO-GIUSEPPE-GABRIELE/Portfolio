@@ -260,8 +260,11 @@ header {
 }
 
 #map {
-  filter: drop-shadow(16px 16px 20px red) invert(100%);
   -webkit-filter: drop-shadow(16px 16px 20px red) invert(100%);
+  -moz-filter: drop-shadow(16px 16px 20px red) invert(100%);
+  -o-filter: drop-shadow(16px 16px 20px red) invert(100%);
+  -ms-filter: drop-shadow(16px 16px 20px red) invert(100%);
+  filter: drop-shadow(16px 16px 20px red) invert(100%);
 }
 
 /* FOOTER */
