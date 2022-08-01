@@ -1,21 +1,21 @@
 /* CSS GLOBALE */
 body {
-  font-family: "Akaya Telivigala", cursive;
-  background-color: #1f1f22;
+  font-family: serif;
+  background-color:#050522;
   color: white;
 }
 
 body.active {
-  background: linear-gradient(to bottom, white,rgb(146, 146, 146));
+  background-color: white;
   color: black;
 }
 
-#nav {
-  background-color:#1f1f22;
+#nav, #foot {
+  background-color: #03031a;
 }
 
 main {
-  margin: 0 4em;
+  padding: 0 10em;
 }
 
 #logoMio {
@@ -48,7 +48,6 @@ header {
   left: 0;
   width: 2em;
   height: 2em;
-  /* background: linear-gradient(to bottom, white,rgb(124, 124, 124)); */
   background: url('./img/moon.jpg');
   background-size:cover;
   transform: scale(0.9);
@@ -70,8 +69,8 @@ header {
   filter: none;
 }
 
-#nav.active {
-  background-color: #a50000;
+#nav.active, #foot.active {
+  background-color: black;
 }
 
 /* SECTION SKILLS */
@@ -111,20 +110,22 @@ header {
   position: absolute;
   top: 123px;
   left: 16px;
-  color: #ff000038;
+  color: #ff000047;
   z-index: -1;
 }
 
 #bg-chiSono p {
-  line-height: 4;
+  line-height: 4.4;
   font-style: italic;
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1552px) {
   #bg-chiSono p {
-    line-height: 4.1;
+    line-height: 4.7;
   }
+}
 
+@media only screen and (max-width: 1400px) {
   #home h1 {
     font-size: 5em;
   }
@@ -134,9 +135,9 @@ header {
   }
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (max-width: 1248px) {
   #bg-chiSono p {
-    line-height: 4.7;
+    line-height: 5.3;
   }
 }
 
@@ -158,7 +159,7 @@ header {
   }
 
   #bg-chiSono p {
-    line-height: 5;
+    line-height: 6;
   }
 
   #home .container {
@@ -166,9 +167,27 @@ header {
   }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 944px) {
   #bg-chiSono p {
-    line-height: 7.7;
+    line-height: 7.8;
+  }
+}
+
+@media only screen and (max-width: 909px) {
+  #home {
+    margin-bottom: 5em;
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  #home {
+    margin-bottom: 10em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #bg-chiSono p {
+    line-height: 9;
   }
 }
 
@@ -182,22 +201,30 @@ header {
     width: 25em;
   }
 
-  #bg-chiSono p {
-    line-height: 7.6;
-  }
-
   #home .container {
     height: 45em;
   }
 }
 
 @media only screen and (max-width: 650px) {
+  #home {
+    margin-bottom: 5em;
+  }
+
+  main {
+    padding: 0 8em;
+  }
+
   #bg-chiSono p {
-    line-height: 7.8;
+    line-height: 9.2;
   }
 }
 
 @media only screen and (max-width: 550px) {
+  #home {
+    margin-bottom: 3em;
+  }
+
   #home h1 {
     font-size: 3em;
   }
@@ -209,7 +236,7 @@ header {
 
   #bg-chiSono p {
     font-size: 1em;
-    line-height: 11.8;
+    line-height: 14;
     z-index: -1;
   }
 
@@ -218,25 +245,75 @@ header {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #bg-chiSono p {
+    line-height: 13.8;
+  }
+
+  main {
+    padding: 0 5em;
+  }
+}
+
 @media only screen and (max-width: 390px) {
   #leMieSkills {
     color: white;
   }
-
-  #bg-chiSono p {
-    line-height: 12;
-  }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
   #bg-chiSono p {
-    line-height: 12.7;
+    line-height: 14.8;
   }
 }
 
 /* SECTION CHI SONO */
 #chi-sono img {
   width: 50em;
+}
+
+.btn-special a, .btn-special{
+  text-decoration: none;
+  color: white;
+}
+
+.btn-special {
+  border: 2px solid white;
+  background-color: #050522;
+  border-radius: 3rem;
+  font-size: 1rem;
+  overflow: hidden;
+  padding: 0.5em 1.5em;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  will-change: transform;
+  z-index: 0;
+}
+.btn-special::after {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,32,185,1) 0%, rgba(1,6,61,1) 100%);
+  border-radius: 3rem;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+.btn-special:hover::after {
+  transform: translate(0, 0);
+}
+.btn-special:hover {
+  border: 2px solid transparent;
+  transform: scale(1.05);
+  will-change: transform;
 }
 
 /* SECTION WORKS */

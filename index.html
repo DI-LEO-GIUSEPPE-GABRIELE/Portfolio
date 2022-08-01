@@ -76,9 +76,9 @@
     </header>
     <main>
 
-        <section id="home" class="mb-5">
+        <section id="home">
             <div class="container">
-                <div class="row justify-content-center align-items-center">
+                <div class="row justify-content-around align-items-center">
                     <div class="col-lg-4">
                         <h1>
                             Ciao, <br />
@@ -86,7 +86,7 @@
                             Web Developer
                         </h1>
                     </div>
-                    <div class="col-lg-4 text-center">
+                    <div class="col-lg-6 text-center">
                         <img src="./img/me.JPG" class="img-fluid" alt="io">
                     </div>
                 </div>
@@ -194,8 +194,8 @@
             </div>
         </section>
 
-        <section class="text-center mb-5" id="chi-sono">
-            <h2 class="mx-3">Provengo da piccole realtà, la mia esperienza lavorativa ha origine in uno dei mestieri più
+        <section id="chi-sono" class="text-center mb-5">
+            <h2>Provengo da piccole realtà, la mia esperienza lavorativa ha origine in uno dei mestieri più
                 antichi della storia, la panificazione.
                 La versatilità è sempre stata un punto di forza, ed è da quì che parte la mia avventura; dopo 5 anni,
                 dal lavoro più antico al più moderno.
@@ -208,15 +208,17 @@
             </h2>
             <p class="mb-5" data-aos="zoom-in" data-aos-delay="50" data-aos-duration="1000"
                 data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
-                data-aos-anchor-placement="top-center">Scarica il mio <a style="color: red;" target="_blank"
-                    href="./filePDF/CV Giuseppe Gabriele di Leo.pdf">CV</a> e la mia <a
-                    style="color: red;" target="_blank"
+                data-aos-anchor-placement="top-center">Scarica il mio <button class="btn-special">
+                    <a target="_blank" href="./filePDF/CV Giuseppe Gabriele di Leo.pdf">CV </a></button> e la mia <button class="btn-special"><a target="_blank"
                     href="./filePDF/Lettera di presentazione - Giuseppe Gabriele di Leo .pdf">lettera di
-                    presentazione</a>
+                    presentazione</a></button>
             </p>
-            <img data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            <img id="imgDark" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                 data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center"
-                class="img-fluid mb-5 rounded" src="./img/Untitled.jpg" alt="diagramma-albero">
+                class="img-fluid mb-5 rounded" src="./img/mappa-lavoro.jpg" alt="diagramma-albero">
+            <img id="imgLight" data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center"
+                class="img-fluid mb-5 rounded" src="./img/mappa-lavoro-white.jpg" alt="diagramma-albero">
         </section>
 
         <section id="leMieSkills" class="text-center mb-5">
@@ -266,8 +268,8 @@
 
         <section class="text-center mb-5" id="works">
             <h2 class="mb-5">Ecco un piccolo reportage di alcuni dei lavori più interessanti da me svolti. <br>
-                Per consultare i codici spostarsi sul mio <a target="_blank" class="text-danger"
-                    href="https://github.com/DI-LEO-GIUSEPPE-GABRIELE">GitHub</a></h2>
+                Per consultare i codici spostarsi sul mio <button class="btn-special"><a target="_blank"
+                    href="https://github.com/DI-LEO-GIUSEPPE-GABRIELE">GitHub</a></button></h2>
             <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
                 data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" class="container">
                 <div class="row text-center justify-content-center">
@@ -278,8 +280,10 @@
                             <p class="card-text">Una multi page Desktop-app realizzata con Bootstrap.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./esercizio_bootstrap/Home.html" class="btn btn-danger">Dagli un
-                                occhio!</a>
+                           <button class="btn-special">
+                                <a target="_blank" href="./esercizio_bootstrap/Home.html">Dagli un
+                                    occhio!</a>
+                           </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -290,9 +294,10 @@
                                 giochi.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./esercizio1s9 - gaming-shop/index.html"
-                                class="btn btn-danger">Dagli un
-                                occhio!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="./esercizio1s9 - gaming-shop/index.html">Dagli un
+                                    occhio!</a>
+                            </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -303,9 +308,10 @@
                                 chiamata.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./progetto finale settimana 8 - interfaccia/index.html"
-                                class="btn btn-danger">Dagli un
-                                occhio!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="./progetto finale settimana 8 - interfaccia/index.html">Dagli un
+                                    occhio!</a>
+                            </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -315,9 +321,10 @@
                             <p class="card-text">Una Web-spa di un convertitore di valuta.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./team work converter valute/s7g3e1/index.html"
-                                class="btn btn-danger">Dagli un
-                                occhio!</a>
+                           <button class="btn-special">
+                                <a target="_blank" href="./team work converter valute/s7g3e1/index.html">Dagli un
+                                    occhio!</a>
+                           </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -327,8 +334,10 @@
                             <p class="card-text">Una responsive site multi-page.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./completo/index.html" class="btn btn-danger">Dagli un
-                                occhio!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="./completo/index.html">Dagli un
+                                    occhio!</a>
+                            </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -338,9 +347,11 @@
                             <p class="card-text">Un memory-game interamente realizzato con jQuery.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./progettofinalesettimana6/index.html" class="btn btn-danger">Dagli
-                                un
-                                occhio!</a>
+                           <button class="btn-special">
+                                <a target="_blank" href="./progettofinalesettimana6/index.html">Dagli
+                                    un
+                                    occhio!</a>
+                           </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -350,8 +361,10 @@
                             <p class="card-text">Un memory-game interamente realizzato con Javascipt Vanilla.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./PROGETTO-start/index.html" class="btn btn-danger">Dagli un
-                                occhio!</a>
+                           <button class="btn-special">
+                                <a target="_blank" href="./PROGETTO-start/index.html">Dagli un
+                                    occhio!</a>
+                           </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -361,8 +374,10 @@
                             <p class="card-text">Un'interrogazione json su province e comuni.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="./esercizio5s7/index.html" class="btn btn-danger">Dagli un
-                                occhio!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="./esercizio5s7/index.html">Dagli un
+                                    occhio!</a>
+                            </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -372,8 +387,10 @@
                             <p class="card-text">Una to do list SPA realizzata con Angular.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="https://todolistangularjimbo.netlify.app/" class="btn btn-danger">Dagli un
-                                occhio!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="https://todolistangularjimbo.netlify.app/">Dagli un
+                                    occhio!</a>
+                            </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -383,8 +400,10 @@
                             <p class="card-text">Una Shopping Web app realizzata con Angular.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="https://github.com/DI-LEO-GIUSEPPE-GABRIELE/FE07A_progetto_sett11" class="btn btn-danger">Dagi un
-                                occhio al codice!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="https://github.com/DI-LEO-GIUSEPPE-GABRIELE/FE07A_progetto_sett11">Dagi un
+                                    occhio al codice!</a>
+                            </button>
                         </div>
                     </div>
                     <div class="card p-2 m-2" style="width: 18rem;">
@@ -394,8 +413,10 @@
                             <p class="card-text">CRM finale in Angular con Epicode Italia.</p>
                         </div>
                         <div class="card-footer">
-                            <a target="_blank" href="https://github.com/DI-LEO-GIUSEPPE-GABRIELE/FE07A_progetto_finale_epicode" class="btn btn-danger">Dagi un
-                                occhio al codice!</a>
+                            <button class="btn-special">
+                                <a target="_blank" href="https://github.com/DI-LEO-GIUSEPPE-GABRIELE/FE07A_progetto_finale_epicode">Dagi un
+                                    occhio al codice!</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -407,8 +428,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div data-aos="fade-down" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
-                    data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" class="col-md-6 mb-5">
-                        <form method="POST" action="mailto:giuseppegabrieledileo95@gmail.com" class="w-75" name="invia"
+                    data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center" class="col-lg-6 mb-5">
+                        <form method="POST" action="mailto:giuseppegabrieledileo95@gmail.com" name="invia"
                             enctype="text/plain">
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nome / Società</label>
@@ -431,11 +452,10 @@
                                 <textarea class="form-control" id="textarea" required name="message"
                                     placeholder="Scrivimi un messaggio"></textarea><br />
                             </div>
-                            <button id="butSub" type="submit" value="Invia la mail"
-                                class="btn btn-danger">Invia</button>
+                            <button class="btn-special" id="butSub" type="submit" value="Invia la mail">Invia</button>
                         </form>
                     </div>
-                    <div class="col-md-6 mb-5">
+                    <div class="col-lg-6 mb-5">
                         <iframe id="map" class="rounded"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23956.2903824195!2d16.09842975!3d41.3624316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sit!2sit!4v1645875176578!5m2!1sit!2sit"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -445,7 +465,7 @@
         </section>
     </main>
 
-    <footer class="text-center text-white p-3 bg-dark">
+    <footer id="foot" class="text-center text-white p-3">
         <p>&copy; Portfolio creato ed ideato da
         <address>Giuseppe Gabriele di Leo, Trinitapoli 76015 (BT)</address> <a class=""
             href="tel:3933324724">Chiamami</a></p>

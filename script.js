@@ -1,21 +1,23 @@
 //VARIABILI GLOBALI
-const nameP = document.getElementById("nameP");
-const telP = document.getElementById("telP");
-const mailP = document.getElementById("mailP");
-const messP = document.getElementById("messP");
+const nameP = document.getElementById("nameP"),
+  telP = document.getElementById("telP"),
+  mailP = document.getElementById("mailP"),
+  messP = document.getElementById("messP"),
+  imgD = document.getElementById("imgDark"),
+  imgL = document.getElementById("imgLight");
 
 nameP.hidden = true;
 telP.hidden = true;
 mailP.hidden = true;
 messP.hidden = true;
+imgL.hidden = true;
 
 //CONTROLLI DI VALIDAZIONE SUL FORM
-butSub.addEventListener("click", function () {
-  const inputNome = document.getElementById("name").value;
-  const inputTelefono = document.getElementById("telefono").value;
-  const inputMail = document.getElementById("email").value;
-  const inputMessaggio = document.getElementById("textarea").value;
-  const butSub = document.getElementById("butSub");
+butSub.addEventListener("click", () => {
+  const inputNome = document.getElementById("name").value,
+    inputTelefono = document.getElementById("telefono").value,
+    inputMail = document.getElementById("email").value,
+    inputMessaggio = document.getElementById("textarea").value;
 
   let check = true;
 
@@ -60,14 +62,28 @@ AOS.init({
 });
 
 //IMPLEMENTAZIONE DARK-MODE
-const toggle = document.getElementById('toggle');
-const body = document.querySelector('body');
-const map = document.getElementById('map');
-const nav =  document.getElementById('nav');
+const toggle = document.getElementById("toggle"),
+  body = document.querySelector("body"),
+  map = document.getElementById("map"),
+  nav = document.getElementById("nav"),
+  foot = document.getElementById("foot");
 
-toggle.onclick = function(){
-  toggle.classList.toggle('active');
-  body.classList.toggle('active');
-  map.classList.toggle('active');
-  nav.classList.toggle('active');
+toggle.onclick = () => {
+  toggle.classList.toggle("active");
+  if (toggle.classList == 'active') {
+    imgD.hidden = true;
+    imgL.hidden = false;
+  } else {
+    imgD.hidden = false;
+    imgL.hidden = true;
+  }
+  body.classList.toggle("active");
+  map.classList.toggle("active");
+  nav.classList.toggle("active");
+  foot.classList.toggle("active");
+};
+
+//METODO PER I LINK
+function navigateTo(url){
+  return location.ancestorOrigins(url);
 }
