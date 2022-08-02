@@ -28,6 +28,14 @@ header {
   top: 0;
 }
 
+hr {
+  height: 2px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
 /* IMPLEMENTAZIONE DARK-MODE */
 #toggle {
   position: relative;
@@ -91,7 +99,6 @@ header {
 #home .container {
   margin: 0;
   min-width: 100%;
-  height: 55em;
 }
 
 #home img {
@@ -115,13 +122,13 @@ header {
 }
 
 #bg-chiSono p {
-  line-height: 4.4;
+  line-height: 5.5;
   font-style: italic;
 }
 
 @media only screen and (max-width: 1552px) {
   #bg-chiSono p {
-    line-height: 4.7;
+    line-height: 5.9;
   }
 }
 
@@ -129,15 +136,11 @@ header {
   #home h1 {
     font-size: 5em;
   }
-
-  #home .container {
-    height: 40em;
-  }
 }
 
 @media only screen and (max-width: 1248px) {
   #bg-chiSono p {
-    line-height: 5.3;
+    line-height: 6.5;
   }
 }
 
@@ -159,35 +162,19 @@ header {
   }
 
   #bg-chiSono p {
-    line-height: 6;
-  }
-
-  #home .container {
-    height: 55em;
+    line-height: 7.4;
   }
 }
 
 @media only screen and (max-width: 944px) {
   #bg-chiSono p {
-    line-height: 7.8;
-  }
-}
-
-@media only screen and (max-width: 909px) {
-  #home {
-    margin-bottom: 5em;
-  }
-}
-
-@media only screen and (max-width: 858px) {
-  #home {
-    margin-bottom: 10em;
+    line-height: 9.2;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #bg-chiSono p {
-    line-height: 9;
+    line-height: 10.7;
   }
 }
 
@@ -200,31 +187,15 @@ header {
   #home img {
     width: 25em;
   }
-
-  #home .container {
-    height: 45em;
-  }
 }
 
 @media only screen and (max-width: 650px) {
-  #home {
-    margin-bottom: 5em;
-  }
-
   main {
     padding: 0 8em;
-  }
-
-  #bg-chiSono p {
-    line-height: 9.2;
   }
 }
 
 @media only screen and (max-width: 550px) {
-  #home {
-    margin-bottom: 3em;
-  }
-
   #home h1 {
     font-size: 3em;
   }
@@ -234,22 +205,19 @@ header {
     z-index: 1;
   }
 
-  #bg-chiSono p {
-    font-size: 1em;
-    line-height: 14;
-    z-index: -1;
+  hr {
+    margin-top: 5em;
+    margin-bottom: 5em;
   }
 
-  #home .container {
-    height: 38em;
+  #bg-chiSono p {
+    font-size: 1em;
+    line-height: 15;
+    z-index: -1;
   }
 }
 
 @media only screen and (max-width: 480px) {
-  #bg-chiSono p {
-    line-height: 13.8;
-  }
-
   main {
     padding: 0 5em;
   }
@@ -263,7 +231,7 @@ header {
 
 @media only screen and (max-width: 360px) {
   #bg-chiSono p {
-    line-height: 14.8;
+    line-height: 15.8;
   }
 }
 
@@ -274,12 +242,12 @@ header {
 
 .btn-special a, .btn-special{
   text-decoration: none;
-  color: white;
+  color: currentColor;
 }
 
 .btn-special {
-  border: 2px solid white;
-  background-color: #050522;
+  border: 2px solid currentColor;
+  background-color: transparent;
   border-radius: 3rem;
   font-size: 1rem;
   overflow: hidden;
@@ -291,8 +259,7 @@ header {
   z-index: 0;
 }
 .btn-special::after {
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(4,32,185,1) 0%, rgba(1,6,61,1) 100%);
+  background: rgb(140, 140, 254);
   border-radius: 3rem;
   content: '';
   display: block;

@@ -82,8 +82,3 @@ toggle.onclick = () => {
   nav.classList.toggle("active");
   foot.classList.toggle("active");
 };
-
-//METODO PER I LINK
-function navigateTo(url){
-  return location.ancestorOrigins(url);
-}
