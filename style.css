@@ -1,7 +1,7 @@
 /* CSS GLOBALE */
 body {
   font-family: serif;
-  background-color:#050522;
+  background-color: #050522;
   color: white;
 }
 
@@ -10,7 +10,8 @@ body.active {
   color: black;
 }
 
-#nav, #foot {
+#nav,
+#foot {
   background-color: #03031a;
 }
 
@@ -56,17 +57,17 @@ hr {
   left: 0;
   width: 2em;
   height: 2em;
-  background: url('./img/moon.jpg');
-  background-size:cover;
+  background: url("./img/moon.jpg");
+  background-size: cover;
   transform: scale(0.9);
   border-radius: 50%;
   transition: 0.5s;
 }
 
 #toggle.active .indicator {
-  left:3em;
-  background: url('./img/sun-png.jpg');
-  background-size:cover;
+  left: 3em;
+  background: url("./img/sun-png.jpg");
+  background-size: cover;
 }
 
 #toggle.active {
@@ -77,7 +78,8 @@ hr {
   filter: none;
 }
 
-#nav.active, #foot.active {
+#nav.active,
+#foot.active {
   background-color: black;
 }
 
@@ -240,7 +242,8 @@ hr {
   width: 50em;
 }
 
-.btn-special a, .btn-special{
+.btn-special a,
+.btn-special {
   text-decoration: none;
   color: currentColor;
 }
@@ -261,7 +264,7 @@ hr {
 .btn-special::after {
   background: rgb(140, 140, 254);
   border-radius: 3rem;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   width: 100%;
@@ -290,16 +293,19 @@ hr {
     rgb(164 164 164 / 12%) 47%,
     rgba(88, 88, 88, 1) 100%
   );
+  border-radius: 5em 0;
+  overflow: hidden;
 }
 
 /* SECTION CONTATTI */
 #contatti form {
+  width: 80%;
   margin: 0 auto;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 800px) {
   #contatti form {
-    width: 100% !important;
+    width: 100%;
   }
 }
 
@@ -313,6 +319,7 @@ hr {
 
 /* FOOTER */
 footer a {
+  font-size: 1.2em;
   z-index: 20;
   text-decoration: none;
   color: red;

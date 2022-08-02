@@ -4,7 +4,8 @@ const nameP = document.getElementById("nameP"),
   mailP = document.getElementById("mailP"),
   messP = document.getElementById("messP"),
   imgD = document.getElementById("imgDark"),
-  imgL = document.getElementById("imgLight");
+  imgL = document.getElementById("imgLight"),
+  form = document.querySelector("form");
 
 nameP.hidden = true;
 telP.hidden = true;
@@ -53,6 +54,7 @@ butSub.addEventListener("click", () => {
     alert(
       "Grazie mille per la sua richiesta, valuterò il prima possibile, buona giornata! 😁"
     );
+    form.reset();
   }
 });
 
@@ -70,7 +72,7 @@ const toggle = document.getElementById("toggle"),
 
 toggle.onclick = () => {
   toggle.classList.toggle("active");
-  if (toggle.classList == 'active') {
+  if (toggle.classList == "active") {
     imgD.hidden = true;
     imgL.hidden = false;
   } else {
